@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20180226062725) do
 
   create_table "accounts", force: :cascade do |t|
-    t.float    "amount",     default: 0.0
+    t.float    "balance",    default: 0.0
     t.integer  "user_id"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
