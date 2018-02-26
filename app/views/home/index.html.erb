@@ -1,0 +1,8 @@
+<%= form_tag home_transaction_path, remote: true do %>
+  <div>
+    <%= label_tag :amount %>
+    <%= number_field_tag :amount, 0.0, required: true %>
+  </div>
+  <%= submit_tag 'Deposit' %>
+  <%= submit_tag 'Withdrawl' %>
+<% end %>
