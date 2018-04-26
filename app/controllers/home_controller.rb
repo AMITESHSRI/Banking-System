@@ -5,9 +5,8 @@ class HomeController < ApplicationController
   end
 
   def transaction
-  	byebug
   	if params[:commit] == "Deposit"
-  		@account.desposit(params[:amount])
+  		@account.deposit(params[:amount])
   	elsif params[:commit] == "Withdrawl"
   		@account.withdrawl(params[:amount])
   	end
